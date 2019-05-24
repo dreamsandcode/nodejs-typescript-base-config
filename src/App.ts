@@ -2,8 +2,6 @@ import * as express from "express";
 
 class App {
     public express;
-    public test: string;
-    public abc: string;
 
     public constructor() {
         this.express = express();
