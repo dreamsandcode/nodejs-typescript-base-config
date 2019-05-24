@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --inspect=5858 -r ts-node/register test/**/*.spec.ts",
+    "start": "nodemon --inspect=5858 -r ts-node/register ./src/index.ts",
     "build": "tsc",
-    "test": "nodemon --exec mocha --inspect=5858 -r ts-node/register test/**/*.spec.ts"
+    "test": "nodemon --exec mocha --inspect=5858 -r ts-node/register ./src/index.ts test/**/*.spec.ts"
   },
   "keywords": [
     "node.js",
