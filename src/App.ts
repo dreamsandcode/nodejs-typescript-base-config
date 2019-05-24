@@ -14,8 +14,15 @@ class App {
             '/',
             (req, res): void => {
                 res.json({
-                    message: 'Hello World!',
+                    message: 'Hello World',
                 });
+            },
+        );
+
+        router.use(
+            '/_healthcheck',
+            (req, res): void => {
+                res.status(200).json({ uptime: process.uptime() });
             },
         );
 
